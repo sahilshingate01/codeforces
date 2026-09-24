@@ -1,0 +1,8 @@
+.cph/
+__pycache__/
+*.pyc
+*.pyo
+*.bin
+*.exe
+.DS_Store
+.vscode/

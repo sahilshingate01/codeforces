@@ -1,0 +1,9 @@
+t = int(input())
+
+for _ in range(t):
+    
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+    print('Elsie') if n - sum(arr) > sum(arr) else print('Bessie')
+
