@@ -17,4 +17,4 @@ for _ in range(t) :
         
     # print(*ans)
     print(x,y + r)
-                
+                w
