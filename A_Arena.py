@@ -1,13 +1,5 @@
 t = int(input())
-
-for _ in range(t) :
+for _ in range(t):
     n = int(input())
-    arr = list(map(int,input().split()))
-
-    cnt = 0
-    mi = min(arr)
-
-    for i in range(n) :
-        if arr[i] == mi : cnt += 1
-    
-    print(n - cnt)
+    arr = list(map(int, input().split()))
+    print(n - arr.count(min(arr)))
