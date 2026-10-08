@@ -9,14 +9,13 @@ for _ in range(t) :
     freq = {}
     ans = []
 
-    for i in range(n) :
-        freq[arr[i]] = freq.get(arr[i],0) + 1
+    for x in arr :
+        freq[x] = freq.get(x,0) + 1
     
-        if freq[arr[i]] > 1 : t.append(arr[i])
+        if freq[x] > 1 : t.append(x)
         else :
-            ans.append(arr[i])
+            ans.append(x)
 
-    for i in range(len(t)) :
-        ans.append(t[i])
+    ans.extend(t)
     
     print(*ans)
