@@ -2,17 +2,19 @@ t = int(input())
 
 for _ in range(t):
     n = int(input())
-    a = list(map(int, input().split()))
+    arr = list(map(int, input().split()))
 
-    odd_parity = a[0] % 2
-    even_parity = a[1] % 2
 
-    possible = True
+    odd = arr[0] % 2 
+    even = arr[1] % 2
 
-    for i in range(n):
-        if i % 2 == 0 and a[i] % 2 != odd_parity:
-            possible = False
-        if i % 2 == 1 and a[i] % 2 != even_parity:
-            possible = False
+    f = True
 
-    print("YES" if possible else "NO")
+    for i in range(n) :
+        if i % 2 == 0 and arr[i] % 2 != odd :
+            f = False
+        
+        if i % 2 != 0 and arr[i] % 2 != even :
+            f = False
+
+    print("YES" if f else "NO")
