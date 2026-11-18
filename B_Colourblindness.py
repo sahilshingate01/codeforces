@@ -2,5 +2,19 @@ t = int(input())
 
 for _ in range(t) :
     n = int(input())
-    n,k = map(int,input().split())
-    arr = list(map(int,input().split()))
+    s1 = input()
+    s2 = input()
+    
+    f = True
+    for i in range(n) : 
+        if s1[i] == 'R' :
+            if s2[i] != 'R' :
+                f = False
+                break
+        
+        if s2[i] == 'R' :
+            if s1[i] != 'R' :
+                f = False
+                break
+    
+    print('YES' if f else "NO")
